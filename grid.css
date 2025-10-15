@@ -1,0 +1,14 @@
+.box{
+    background-color: lightgray;
+    /* padding: 10px; */
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(30,1fr);
+}
+
+
+.item{
+    background-color: red;
+    margin: 10;
+    padding: 10;
+}

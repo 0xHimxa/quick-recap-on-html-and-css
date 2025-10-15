@@ -1,0 +1,107 @@
+.body{
+   background-image: url('bg.JPG');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 0px;
+
+}
+.test{
+    border-radius: 20px;
+    border-width: 1px;
+    background-color: red;
+    border-color: rgb(0, 128, 73);
+    padding: 10px;
+    margin: 10px;
+   border-style: solid;
+   border-color: blue;
+  
+    
+     width: 200px;
+      height: 100px;
+      font-weight: bolder;
+    position: relative;
+    
+
+}
+
+.test::before{
+   content:'';
+   
+   width: 0%;
+    position: absolute;
+   top: 10px;
+   bottom: 30px;
+   background-color: aqua;
+    border-radius: 20px;
+transition: ease-in 4s;
+
+}
+
+.test:hover::before{
+   content:'';
+  width: 100%;
+ 
+
+}
+
+
+
+.test:hover{
+
+  text-shadow: 1px 1px 1px brown;
+  color: white;
+  box-shadow: 3px 4px 3px blue;
+   transition: 1s; 
+}
+a{
+   text-decoration: none;
+   background-color: grey;
+   padding: 10px;
+   font-size: 20;
+  
+}
+
+.box-1{
+   width: 300px;
+   height: 300px;
+   background-color: cyan;
+   border-width: bold;
+   position: relative;
+  top: 10;
+   bottom: 5px;
+   left: 30px;
+}
+
+.box-2{
+   width: 200px;
+   height: 200px;
+   background-color: purple;
+   border-width: bold;
+   position:absolute;
+   top: 40px;
+   left: 50px;
+   
+
+}
+.text{
+   color: aqua;
+   width: 300px;
+   height: 600px;
+}
+
+@keyframes runing{
+
+
+from{
+
+   margin-right: 0px;
+}
+to{margin-right: 100%;}
+}
+
+
+button{
+   border-style: none;
+}
