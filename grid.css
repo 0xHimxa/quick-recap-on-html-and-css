@@ -3,7 +3,19 @@
     /* padding: 10px; */
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(30,1fr);
+    grid-template-columns: repeat(2,1fr);
+    /* grid-template-rows: 200px 200px; */
+    grid-auto-rows: minmax(150px,auto);
+
+    /* grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "sidebar content "
+    "footer footer" */
+    /* you can achive same reult with span check below */
+    
+    /* spam acually is the easist we just specify how many it should chop */
+    
 }
 
 
@@ -11,4 +23,19 @@
     background-color: red;
     margin: 10;
     padding: 10;
+}
+
+.b1{
+    /* grid-area: header; */
+    grid-column: span 2;
+}
+.b2{
+   grid-area: span 2;
+}
+.b3{
+    grid-area: span 2;
+}
+
+.b4{
+      grid-column: span 2;
 }
